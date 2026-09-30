@@ -1,0 +1,18 @@
+Influenza
+Copyright 2026 Chaitanya Sai
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+Any redistribution or derivative work must retain this NOTICE file.
+
+The name "Influenza" and the Influenza app icon are not licensed under the
+Apache License; no trademark rights are granted (Apache License 2.0, section 6).
+
+Third-party components:
+
+- NeoPOP iOS (https://github.com/CRED-CLUB/neopop-ios)
+  Copyright 2022 Dreamplug Technologies Private Limited (CRED)
+  Licensed under the Apache License, Version 2.0.
+
+- Brand logos in Influenza/Resources/Assets.xcassets/Brands are trademarks of
+  their respective owners, are NOT covered by this license, and are included
+  only to identify merchants within the app.

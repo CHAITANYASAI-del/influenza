@@ -17,6 +17,7 @@
   <img alt="Tests" src="https://img.shields.io/badge/tests-51%20passing-brightgreen" />
   <img alt="Backend" src="https://img.shields.io/badge/backend-none-lightgrey" />
   <img alt="AI" src="https://img.shields.io/badge/LLM-not%20used-lightgrey" />
+  <img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-blue" />
 </p>
 
 ---
@@ -36,6 +37,7 @@
 11. [Honest platform limits](#11-honest-platform-limits)
 12. [Roadmap](#12-roadmap)
 13. [Credits & third-party notices](#13-credits--third-party-notices)
+14. [License](#14-license)
 
 A deeper, file-by-file walkthrough of the engine lives in **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**.
 
@@ -437,6 +439,12 @@ influenza/
 - **[NeoPOP iOS](https://github.com/CRED-CLUB/neopop-ios)** by CRED — Apache License 2.0. Used for the floating shimmer button, 3D buttons and switch. Colour and typography choices are inspired by CRED's public NeoPOP design system.
 - **Brand logos** are trademarks of their respective owners, taken from each brand's public App Store listing and used only to identify merchants inside the app. Remove `Influenza/Resources/Assets.xcassets/Brands` before redistributing if you don't have the right to use them.
 - Built with Swift, SwiftUI, Swift Charts, WidgetKit, Vision, PDFKit, AuthenticationServices and CryptoKit.
+
+## 14. License
+
+Copyright © 2026 **Chaitanya Sai**.
+
+Licensed under the **[Apache License 2.0](LICENSE)** — see [NOTICE](NOTICE). You may use, modify and distribute this code, provided you keep the copyright notice, the LICENSE and the NOTICE file, and state significant changes. The **Influenza name and icon are not licensed** (no trademark rights are granted), and third-party brand logos are excluded from the license.
 
 ---
 
