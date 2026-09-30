@@ -1,0 +1,62 @@
+name: Influenza
+options:
+  bundleIdPrefix: com.chaitanyasai
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+configFiles:
+  Debug: Config/Base.xcconfig
+  Release: Config/Base.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    # FREE Personal Team build: automatic signing, no App Groups, no FinanceKit,
+    # no Share Extension, no widget target. Production capabilities are added
+    # later as separate targets/adapters without touching LedgerCore.
+    CODE_SIGN_STYLE: Automatic
+    TARGETED_DEVICE_FAMILY: "1"
+packages:
+  LedgerCore:
+    path: Packages/LedgerCore
+  NeoPop:
+    url: https://github.com/CRED-CLUB/neopop-ios
+    from: 1.0.0
+targets:
+  Influenza:
+    type: application
+    platform: iOS
+    sources:
+      - Influenza
+      - Shared
+    dependencies:
+      - package: LedgerCore
+      - package: NeoPop
+      - target: InfluenzaWidget
+    settings:
+      base:
+        CODE_SIGN_ENTITLEMENTS: Influenza/Resources/Influenza.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.chaitanyasai.influenza
+        PRODUCT_NAME: Influenza
+        INFOPLIST_FILE: Influenza/Resources/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+  InfluenzaWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - InfluenzaWidget
+      - Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.chaitanyasai.influenza.widget
+        PRODUCT_NAME: InfluenzaWidget
+        INFOPLIST_FILE: InfluenzaWidget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: InfluenzaWidget/InfluenzaWidget.entitlements
+        SKIP_INSTALL: YES
+schemes:
+  Influenza:
+    build:
+      targets:
+        Influenza: all
+    run:
+      config: Debug

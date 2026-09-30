@@ -1,0 +1,3 @@
+// Copy to Local.xcconfig (gitignored).
+DEVELOPMENT_TEAM = XXXXXXXXXX
+GOOGLE_IOS_CLIENT_ID = 1234-abc.apps.googleusercontent.com

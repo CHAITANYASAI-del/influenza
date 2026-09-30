@@ -1,0 +1,2 @@
+// Shared build config. The FREE build needs no backend and no secrets.
+#include? "Local.xcconfig"
